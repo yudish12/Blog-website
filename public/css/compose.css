@@ -35,4 +35,8 @@ textarea{
 #btn:hover{
     background-color: #0063DC;
 }
-
+@media (max-width:500px){
+    .content{
+        padding: 4rem 2rem;
+    }
+}

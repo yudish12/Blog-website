@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/public'));
 app.get("/",(req,res)=>{
 
 res.render("home",{route:"Home",homeContent:homeContent,postArr:postArr});
-console.log(postArr);
+
 });
 
 app.get("/about",(req,res)=>{
