@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= route%></title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <%- include('partials/header'); -%>
+    <div class="content">
+    <h1>Home</h1>
+    <p><%= homeContent %></p>
+    <% postArr.forEach(function(post){ %>
+        <h1><%= post.title %></h1>
+        <p> <%= post.content %> </p>
+   <% }); %>
+    </div>
+    <div class="others" style="margin-top: -35px;">
+        <h1>About</h1>
+        <p class="truncate">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth</p><a href="/about" target="_blank">Read more</a>
+        <h1>Contact Us</h1>
+        <p>To contact us </p><a href="/Contact" target="_blank">click here</a>
+    </div>
+    <%- include('partials/footer'); -%>
+</body>
+</html>
